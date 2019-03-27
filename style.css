@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(179,174,180,0.62);
+    font-size: 18px;
+}
+
+#container{
+    margin: .7em 4em;
+    padding: 2em;
+}
