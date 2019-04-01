@@ -1,9 +1,51 @@
 body{
-    background-color: rgba(179,174,180,0.62);
-    font-size: 18px;
+  margin: 10px;
 }
 
-#container{
-    margin: .7em 4em;
-    padding: 2em;
+#container {
+  display: grid;
+  grid-template-columns: 50px 1fr 2fr 1fr 50px;
+  max-width: 100vw;
+  grid-gap: 10px;
+  justify-items: end;
+}
+
+article{
+  grid-column: 3 / 4;
+}
+.main_image {
+ grid-column: 1 / span5;
+width: 100%;
+height: 500px;
+ object-fit: cover;
+ object-position: 0 10px;
+  }
+header{
+ grid-column: 2 / span 3
+}
+
+.container__image {
+    grid-column: 2/4;
+}
+
+.container__image--decsription{
+  border-top: 2px solid orange;
+    font-style: italic;
+}
+
+.container_post{
+  grid-column: 3/4;
+}
+
+.post_date{
+  grid-column: 2/4;
+}
+.source{
+  grid-column: 3/4;
+    justify-self: center;
+}
+.author
+{
+  grid-column: 3/4;
+    justify-self: center;
 }
